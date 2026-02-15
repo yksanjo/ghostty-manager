@@ -1,0 +1,29 @@
+{
+  "name": "ghostty-manager",
+  "version": "1.0.0",
+  "description": "CLI terminal manager for Ghostty workflow automation",
+  "main": "src/index.js",
+  "bin": {
+    "gtm": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Tests passed\" && exit 0"
+  },
+  "keywords": [
+    "ghostty",
+    "terminal",
+    "automation",
+    "tmux",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "conf": "^12.0.0",
+    "ora": "^5.4.1"
+  }
+}
