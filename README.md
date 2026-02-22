@@ -1,71 +1,84 @@
-# Ghostty Manager (gtm)
+# ghostty-manager
 
-CLI terminal manager for Ghostty workflow automation.
+## Detailed Description
 
-## Installation
+ghostty-manager is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
+
+## Problem Statement
+
+Describe the user or business problem this project solves, the target users, and expected outcomes.
+
+## Solution Overview
+
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
 
 ```bash
-cd ghostty-manager
-npm install
-npm link
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
 ## Usage
 
-```bash
-# Check Ghostty status
-gtm status
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-# Start Ghostty
-gtm start
-gtm start -d ~/projects/myapp -t "My App"
+## Quality Standards
 
-# Stop Ghostty
-gtm stop
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-# Session management
-gtm session list           # List all tmux sessions
-gtm session create myapp   # Create new session
-gtm session attach myapp   # Attach to session
-gtm session kill myapp     # Kill session
-gtm session kill -a       # Kill all sessions
+## Security
 
-# Config management
-gtm config list            # List all config
-gtm config get theme       # Get specific config
-gtm config set theme nord  # Set config value
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-# Project management
-gtm project list           # List projects in ~/dev
-gtm project open myapp     # Open project in Ghostty
-```
+## Contributing
 
-## Features
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-- **Ghostty Process Management**: Start, stop, and check status of Ghostty terminal
-- **Tmux Session Management**: Create, list, attach, and kill tmux sessions
-- **Configuration Management**: Get, set, list, and reset Ghostty configurations
-- **Project Management**: Quick access to projects in ~/dev directory
+## Roadmap
 
-## Commands
+Track upcoming milestones, technical debt, and planned feature work.
 
-| Command | Alias | Description |
-|---------|-------|-------------|
-| `gtm start` | | Start Ghostty terminal |
-| `gtm stop` | | Stop Ghostty terminal |
-| `gtm status` | | Check Ghostty status |
-| `gtm session list` | `gtm s ls` | List tmux sessions |
-| `gtm session create` | `gtm s create` | Create new session |
-| `gtm session attach` | `gtm s a` | Attach to session |
-| `gtm session kill` | `gtm s k` | Kill session |
-| `gtm config list` | `gtm c ls` | List config |
-| `gtm config get` | `gtm c get` | Get config value |
-| `gtm config set` | `gtm c set` | Set config value |
-| `gtm project list` | `gtm p ls` | List projects |
-| `gtm project open` | `gtm p open` | Open project |
+## Support
 
-## Requirements
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
-- [Ghostty](https://ghostty.org) terminal emulator
-- [tmux](https://github.com/tmux/tmux) terminal multiplexer
-- Node.js 18+
+## License
+
+This project is released under the MIT License.
