@@ -1,5 +1,12 @@
 # ghostty-manager
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/ghostty-manager/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/ghostty-manager/actions)
+![License](https://img.shields.io/github/license/yksanjo/ghostty-manager)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/ghostty-manager)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/ghostty-manager)
+
 ## Detailed Description
 
 ghostty-manager is maintained as an industry-grade software project with production-ready engineering practices.  
